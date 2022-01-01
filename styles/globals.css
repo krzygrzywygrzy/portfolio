@@ -51,6 +51,16 @@ a {
   color: #976d3f;
 }
 
+.project-link {
+  transition: color 0.25s ease-in-out;
+  @apply flex items-center py-2 border-b text-stone-500 cursor-pointer border-stone-500 hover:text-stone-700;
+}
+
+.details-button {
+  transition: all 0.25s ease-in-out;
+  @apply text-stone-500 hover:text-white hover:bg-stone-500 px-2 py-1 rounded-sm cursor-pointer;
+}
+
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);

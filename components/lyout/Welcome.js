@@ -4,19 +4,21 @@ import { HiArrowSmDown } from "react-icons/hi";
 const Welcome = () => {
   return (
     <div id="welcome" className="mx-8 grid grid-cols-7">
-      <div className="col-span-1"></div>
-      <header className="font-bold text-8xl mt-32 col-span-3 tracking-wide">
+      <div className="hidden lg:block col-span-1"></div>
+      <header className="font-bold text-4xl sm:text-4xl md:text-7xl xl:text-9xl mt-56 lg:mt-32 col-span-4 lg:col-span-3 tracking-wide mr-2">
         <p className="ml-8">
           Hi! my <span className="text-stone-500">name</span> is
         </p>
-        <p className="ml-16 text-orange-400">
+        <p className="ml-16 text-red-600">
           Paweł<span className="text-black">...</span>
         </p>
-        <p className="text-4xl font-normal">And I'm web and mobile developer</p>
+        <p className="text-base sm:text-lg md:text-2xl xl:text-4xl font-normal">
+          And I'm web and mobile developer
+        </p>
 
-        <div className="text-lg">
+        <div className="text-base lg:text-lg">
           <p className="mt-12 ">I use React and Flutter</p>
-          <p className="border-b inline pb-2 border-black">
+          <p className="border-b inline  border-black">
             to craft minimalistic and maintable apps
           </p>
         </div>
@@ -28,7 +30,7 @@ const Welcome = () => {
         </div>
       </header>
 
-      <div className="col-span-3 mt-16  mb-12 rounded p-1 border-dashed border-orange-500 welcome-photo">
+      <div className="col-span-3 mt-16 mb-52 lg:mb-12 rounded p-1 border-dashe welcome-photo">
         <img
           alt="krzygrzywygrzy"
           src="https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg"
