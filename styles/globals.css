@@ -45,7 +45,7 @@ a {
 
 .navlink {
   transition: color 0.5s ease-out;
-  @apply text-6xl text-white font-bold tracking-wide my-12;
+  @apply text-4xl md:text-6xl text-white font-bold tracking-wide my-12 2xl:text-8xl;
 }
 .navlink:hover {
   color: #976d3f;
@@ -57,7 +57,7 @@ a {
 }
 
 .details-button {
-  transition: all 0.25s ease-in-out;
+  transition: all 0.5s ease-in-out;
   @apply text-stone-500 hover:text-white hover:bg-stone-500 px-2 py-1 rounded-sm cursor-pointer;
 }
 

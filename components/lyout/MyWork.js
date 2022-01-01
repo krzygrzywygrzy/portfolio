@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineDesktop } from "react-icons/ai";
+import Link from "next/link";
 
 const MyWork = () => {
   return (
@@ -11,7 +12,9 @@ const MyWork = () => {
           <span className="text-2xl">BandMate</span>
           <p>
             App that allows musicians to find bandmates{" "}
-            <span className="details-button">details</span>
+            <span className="details-button">
+              <Link href="/bandmate">details</Link>
+            </span>
           </p>
           <a
             className="project-link"

@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
+import Image from "next/image";
 
 const Welcome = () => {
   return (
@@ -7,7 +8,8 @@ const Welcome = () => {
       <div className="hidden lg:block col-span-1"></div>
       <header className="font-bold text-4xl sm:text-4xl md:text-7xl xl:text-9xl mt-56 lg:mt-32 col-span-4 lg:col-span-3 tracking-wide mr-2">
         <p className="ml-8">
-          Hi! my <span className="text-stone-500">name</span> is
+          Hi! my <br />
+          <span className="text-stone-500">name</span> is
         </p>
         <p className="ml-16 text-red-600">
           Paweł<span className="text-black">...</span>
@@ -25,7 +27,7 @@ const Welcome = () => {
         <div className="text-xl mt-12 mb-6 text-stone-500">
           Check some of my recent projects
         </div>
-        <div className="burger absolute slide-bottom">
+        <div className="burger -mt-6 absolute slide-bottom">
           <HiArrowSmDown size={30} />
         </div>
       </header>
