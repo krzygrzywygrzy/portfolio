@@ -3,7 +3,7 @@ import { HiArrowSmDown } from "react-icons/hi";
 
 const Welcome = () => {
   return (
-    <div className="mx-8 grid grid-cols-7">
+    <div id="welcome" className="mx-8 grid grid-cols-7">
       <div className="col-span-1"></div>
       <header className="font-bold text-8xl mt-32 col-span-3 tracking-wide">
         <p className="ml-8">

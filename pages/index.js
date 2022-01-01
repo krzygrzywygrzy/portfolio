@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Welcome from "../components/Welcome";
+import Navbar from "../components/lyout/Navbar";
+import Welcome from "../components/lyout/Welcome";
 
 export default function Home() {
   return (
