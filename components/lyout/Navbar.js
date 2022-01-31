@@ -6,7 +6,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="flex justify-evenly py-8 border-b items-center sticky z-50">
+    <nav className="flex justify-evenly py-8 border-b items-center sticky top-0 z-50 bg-white">
       <div className="burger">
         <HiMenuAlt4 size={30} onClick={() => setShowMenu(true)} />
       </div>
