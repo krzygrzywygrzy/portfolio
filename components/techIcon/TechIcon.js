@@ -3,7 +3,12 @@ import Image from "next/image";
 
 const TechIcon = ({ img, desc, link }) => {
   return (
-    <a className="flex flex-col items-center" target="_blank" href={link}>
+    <a
+      className="flex flex-col items-center"
+      target="_blank"
+      href={link}
+      rel="noreferrer"
+    >
       <div className="tech-img-wrapper bg-white">
         <Image
           src={img}

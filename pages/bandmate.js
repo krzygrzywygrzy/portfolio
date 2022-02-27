@@ -49,7 +49,7 @@ const bandmate = () => {
             </div>
           ))}
         </section>
-        <section></section>
+        <section className="mt-4 text-stone-600">link</section>
       </div>
     </>
   );

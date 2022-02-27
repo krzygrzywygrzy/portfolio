@@ -22,6 +22,7 @@ const FeaturedProject = () => {
           className="project-link"
           href="https://github.com/krzygrzywygrzy/bandmate_fb"
           target="_blank"
+          rel="noreferrer"
         >
           <FaGithub size={24} /> <span className="ml-2">code</span>
         </a>
@@ -29,6 +30,7 @@ const FeaturedProject = () => {
           className="project-link"
           href="https://awesome-mccarthy-4f7804.netlify.app/"
           target="_blank"
+          rel="noreferrer"
         >
           <AiOutlineDesktop size={24} /> <span className="ml-2">preview</span>
         </a>
