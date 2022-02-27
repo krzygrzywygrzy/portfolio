@@ -8,17 +8,17 @@ const FeaturedProject = () => {
     <div className="flex justify-center">
       <div className="w-128"></div>
       <div className="font-medium w-96 tracking-widest">
-        <p>Featured Project</p>
+        <p className="text-stone-500">Featured Project</p>
         <span className="text-4xl">BandMate</span>
         <p>
-          App that allows musicians to find bandmates{" "}
+          Tinder-like app for musicians{" "}
           <span className="details-button">
             <Link href="/bandmate">details...</Link>
           </span>
         </p>
         <a
           className="project-link"
-          href="https://github.com/krzygrzywygrzy/bandmate"
+          href="https://github.com/krzygrzywygrzy/bandmate_fb"
           target="_blank"
         >
           <FaGithub size={24} /> <span className="ml-2">code</span>

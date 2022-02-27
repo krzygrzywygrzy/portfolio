@@ -19,6 +19,10 @@ a {
   box-sizing: border-box;
 }
 
+.site {
+  @apply px-4 md:px-16 lg:px-32 xl:px-52;
+}
+
 .burger {
   transition: color 0.25s ease-in-out;
   @apply text-stone-500 hover:text-stone-700  cursor-pointer;
@@ -68,6 +72,10 @@ a {
 
 .tech-img-wrapper > div {
   border-radius: 100%;
+}
+
+.project-details-title {
+  line-height: 4.5rem;
 }
 
 @-webkit-keyframes slide-bottom {
