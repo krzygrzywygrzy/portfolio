@@ -18,7 +18,7 @@ const Welcome = () => {
           Paweł<span className="text-black">...</span>
         </p>
         <p className="text-base sm:text-lg md:text-2xl xl:text-4xl font-normal">
-          And I'm web and mobile developer
+          And I&apos;m web and mobile developer
         </p>
 
         <div className="text-base lg:text-lg">
