@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
+import Link from "next/link";
 import Image from "next/image";
 
 const Welcome = () => {
@@ -19,7 +20,9 @@ const Welcome = () => {
         </p>
 
         <div className="text-base lg:text-lg">
-          <p className="mt-12 ">I use React and Flutter</p>
+          <p className="mt-12 ">
+            I use React <span>(and sometimes Flutter)</span>
+          </p>
           <p className="border-b inline  border-black">
             to craft minimalistic and maintable apps
           </p>
@@ -28,20 +31,25 @@ const Welcome = () => {
           Check some of my recent projects
         </div>
         <div className="burger hidden md:block -mt-6 absolute slide-bottom">
-          <HiArrowSmDown size={30} />
+          <Link href="/#mywork">
+            <HiArrowSmDown size={30} />
+          </Link>
         </div>
       </header>
 
       <div className="hidden md:block col-span-3 h-4/5 ml-8 mt-16 mb-52 lg:mb-24 rounded p-1 border-dashe welcome-photo">
         <p className="text-sm mb-2 text-center font-bold">
-          Some <span className="text-red-600 text-xl">facts</span> about me:
+          Some <span className="text-red-600 text-xl">unrelated facts</span>{" "}
+          about me:
         </p>
         <img
           alt="krzygrzywygrzy"
           src="https://i.scdn.co/image/ab6761610000e5eb07603145b500ea5408074053"
           className="rounded object-cover h-4/5 lg:h-5/6 w-full shadow-xl"
         />
-        <p className="text-center mt-2">Favourite band: Bring Me The Horizon</p>
+        <p className="text-center mt-2">
+          Favourite band: <i>Bring Me The Horizon</i>
+        </p>
       </div>
     </div>
   );

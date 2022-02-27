@@ -15,9 +15,9 @@ const Menu = ({ close }) => {
       <div className="pl-8 md:pl-8 md:grid grid-cols-7">
         <div className="col-span-2"></div>
         <div className="py-32 col-span-3">
-          <NavLink label="WELCOME" link="#welcome" close={close} />
-          <NavLink label="MY WORK" link="#mywork" close={close} />
-          <NavLink label="CONTACT ME" link="#contactme" close={close} />
+          <NavLink label="WELCOME" link="/#welcome" close={close} />
+          <NavLink label="MY WORK" link="/#mywork" close={close} />
+          <NavLink label="CONTACT ME" link="/#contactme" close={close} />
         </div>
       </div>
     </div>
