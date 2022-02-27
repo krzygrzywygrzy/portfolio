@@ -49,6 +49,7 @@ const bandmate = () => {
             </div>
           ))}
         </section>
+        <section></section>
       </div>
     </>
   );
