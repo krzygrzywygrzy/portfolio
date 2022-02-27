@@ -13,7 +13,7 @@ const ThisPortoflio = () => {
         />
         <div className="ml-4">
           <TechIcon
-            img="/techlogos/tailwind-logo.png"
+            img="/techLogos/tw-logo.png"
             desc="Tailwindcss"
             link="https://tailwindcss.com/"
           />
