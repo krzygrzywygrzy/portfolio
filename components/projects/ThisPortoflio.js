@@ -8,13 +8,13 @@ const ThisPortoflio = () => {
       <div className="mt-4 flex">
         <TechIcon
           img="/techLogos/nextjs-logo.png"
-          desc="next.js"
+          desc="Next.js"
           link="https://nextjs.org/"
         />
         <div className="ml-4">
           <TechIcon
             img="/techlogos/tailwind-logo.png"
-            desc="tailwindcss"
+            desc="Tailwindcss"
             link="https://tailwindcss.com/"
           />
         </div>

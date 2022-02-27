@@ -9,7 +9,9 @@ const FeaturedProject = () => {
       <div className="w-128"></div>
       <div className="font-medium w-96 tracking-widest">
         <p className="text-stone-500">Featured Project</p>
-        <span className="text-4xl">BandMate</span>
+        <span className="text-4xl">
+          <Link href="/bandmate">BandMate</Link>
+        </span>
         <p>
           Tinder-like app for musicians{" "}
           <span className="details-button">

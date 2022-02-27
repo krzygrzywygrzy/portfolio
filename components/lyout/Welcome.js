@@ -1,9 +1,11 @@
 import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
 import Link from "next/link";
-import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Welcome = () => {
+  const router = useRouter();
+
   return (
     <div id="welcome" className="mx-8 md:grid grid-cols-7">
       <div className="hidden lg:block col-span-1"></div>
@@ -30,10 +32,11 @@ const Welcome = () => {
         <div className="text-xl mt-12 mb-6 text-stone-500">
           Check some of my recent projects
         </div>
-        <div className="burger hidden md:block -mt-6 absolute slide-bottom">
-          <Link href="/#mywork">
-            <HiArrowSmDown size={30} />
-          </Link>
+        <div
+          className="burger hidden md:block -mt-6 absolute slide-bottom"
+          onClick={() => router.push("/#mywork")}
+        >
+          <HiArrowSmDown size={30} />
         </div>
       </header>
 
