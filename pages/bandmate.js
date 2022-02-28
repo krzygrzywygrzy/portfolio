@@ -4,7 +4,6 @@ import Head from "next/head";
 import TechDisplay from "../components/projects/TechDisplay";
 import ProjectHeader from "../components/projects/ProjectHeader";
 import ProjectLinks from "../components/projects/ProjectLinks";
-import Image from "next/image";
 
 const tech = [
   {
@@ -48,7 +47,7 @@ const bandmate = () => {
       </Head>
       <Navbar />
 
-      <div className="site flex">
+      <div className="site flex mt-16">
         <div>
           <ProjectHeader
             title="BandMate"
@@ -74,15 +73,15 @@ const bandmate = () => {
                 <span className="text-stone-700 font-semibold">
                   well known Tinder formula
                 </span>{" "}
-                to find people we need...
+                to find people you need...
               </p>
               <br />
               <p className="section-paragraph">
                 Just customize your profile and start looking for people to jam!
                 You can decide using criteria like:{" "}
                 <span className="text-stone-700 font-semibold">
-                  instruments, prefered genres and even music that person lesten
-                  to!
+                  instruments, prefered genres and even music that person
+                  lestens to!
                 </span>
               </p>
             </div>
@@ -113,6 +112,18 @@ const bandmate = () => {
                 built in chat!
               </span>
             </p>
+          </div>
+        </div>
+        <div className="site flex justify-center items-center text-stone-600 mt-24 mb-32 noto-serif">
+          <div className="mr-8 text-2xl">Interested?</div>
+          <div className="brown-button">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://determined-kepler-d34ffb.netlify.app/"
+            >
+              Check it out...
+            </a>
           </div>
         </div>
       </div>
