@@ -4,6 +4,7 @@ import Head from "next/head";
 import TechDisplay from "../components/projects/TechDisplay";
 import ProjectHeader from "../components/projects/ProjectHeader";
 import ProjectLinks from "../components/projects/ProjectLinks";
+import Image from "next/image";
 
 const tech = [
   {
@@ -37,19 +38,77 @@ const bandmate = () => {
   return (
     <>
       <Head>
-        <title>Bandmate</title>
+        <title>BandMate</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Navbar />
+
+      <div className="site flex">
+        <div>
+          <ProjectHeader
+            title="BandMate"
+            desc="The place where you can find perfect mates for your band!"
+          />
+          <TechDisplay tech={tech} />
+          <ProjectLinks
+            code="https://github.com/krzygrzywygrzy/bandmate_fb"
+            site="https://determined-kepler-d34ffb.netlify.app/"
+          />
+        </div>
+      </div>
       <div className="site">
-        <ProjectHeader
-          title="Bandmate"
-          desc="The place where you can find mates to your band!"
-        />
-        <TechDisplay tech={tech} />
-        <ProjectLinks
-          code="https://github.com/krzygrzywygrzy/bandmate_fb"
-          site="https://determined-kepler-d34ffb.netlify.app/"
-        />
+        <div>
+          <div className="flex justify-end">
+            <div className="text-stone-600 mr-4 mt-24 text-lg">
+              <header className="section-title w-128">
+                Pick musicians like you pick your dates!
+              </header>
+              <br />
+              <p className="section-paragraph">
+                Bandmate uses{" "}
+                <span className="text-stone-700 font-semibold">
+                  well known Tinder formula
+                </span>{" "}
+                to find people we need...
+              </p>
+              <br />
+              <p className="section-paragraph">
+                Just customize your profile and start looking for people to jam!
+                You can decide using criteria like:{" "}
+                <span className="text-stone-700 font-semibold">
+                  instruments, prefered genres and even music that person lesten
+                  to!
+                </span>
+              </p>
+            </div>
+            <div className="-mt-32">
+              <img src={"/bandmate/jessie-profile.png"} className="shadow-xl" />
+            </div>
+          </div>
+        </div>
+        <div className="flex mt-8 xl:-mt-72 mb-8">
+          <div>
+            <img src={"/bandmate/chat.png"} className="shadow-xl" />
+          </div>
+          <div className="text-stone-600 ml-4 xl:mt-24 text-lg">
+            <header className="section-title w-128 mt-16 xl:mt-64">
+              Of course you can chat with people you have matched with!
+            </header>
+            <br />
+            <p className="section-paragraph">
+              App would be useless if you were not able to connect with other
+              musicians... so you can use{" "}
+              <span className="text-stone-700 font-semibold">
+                built in chat!
+              </span>
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

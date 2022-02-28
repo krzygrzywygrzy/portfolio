@@ -78,6 +78,19 @@ a {
   line-height: 4.5rem;
 }
 
+.section-title {
+  font-family: "Noto Serif Display", serif;
+  @apply text-3xl font-medium;
+}
+
+.noto-serif {
+  font-family: "Noto Serif Display", serif;
+}
+
+.section-paragraph {
+  @apply w-96 font-light text-justify;
+}
+
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);

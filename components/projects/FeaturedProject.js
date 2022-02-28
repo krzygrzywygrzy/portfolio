@@ -28,7 +28,7 @@ const FeaturedProject = () => {
         </a>
         <a
           className="project-link"
-          href="https://awesome-mccarthy-4f7804.netlify.app/"
+          href="https://determined-kepler-d34ffb.netlify.app/"
           target="_blank"
           rel="noreferrer"
         >
