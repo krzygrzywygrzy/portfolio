@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectHeader = ({ title, desc }) => {
   return (
-    <header>
+    <header className="text-center md:text-left">
       <p className="text-stone-500 text-7xl md:text-8xl font-bold project-details-title tracking-wide">
         {title}
       </p>

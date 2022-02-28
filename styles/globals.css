@@ -91,6 +91,10 @@ a {
   @apply md:w-72 lg:w-96 font-light text-justify;
 }
 
+.bandmate-photo-position {
+  right: -50px;
+}
+
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);

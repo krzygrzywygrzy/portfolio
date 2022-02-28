@@ -4,7 +4,7 @@ import { HiOutlinePresentationChartLine } from "react-icons/hi";
 
 const ProjectLinks = ({ code, site }) => {
   return (
-    <section className="mt-4 text-stone-600 flex">
+    <section className="w-full mt-4 text-stone-600 flex justify-center md:justify-start">
       <a
         href={site}
         className="flex items-center cursor-pointer"

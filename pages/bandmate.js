@@ -63,8 +63,8 @@ const bandmate = () => {
       </div>
       <div className="site">
         <div>
-          <div className="flex justify-end">
-            <div className="text-stone-600 mr-4 mt-24 text-lg">
+          <div className="flex justify-end md:mr-0 ">
+            <div className="text-stone-600 mr-4 mt-24 text-lg md:w-auto relative">
               <header className="section-title lg:w-128">
                 Pick musicians like you pick your dates!
               </header>
@@ -86,14 +86,20 @@ const bandmate = () => {
                 </span>
               </p>
             </div>
-            <div className="-mt-32">
-              <img src={"/bandmate/jessie-profile.png"} className="shadow-xl" />
+            <div className="mt-16 md:mr-0 md:-mt-24">
+              <img
+                src={"/bandmate/jessie-profile.png"}
+                className="shadow-xl overflow-hidden w-128 md:w-auto"
+              />
             </div>
           </div>
         </div>
-        <div className="flex mt-8 xl:-mt-72 mb-8">
-          <div>
-            <img src={"/bandmate/chat.png"} className="shadow-xl" />
+        <div className="flex mt-8 xl:-mt-72 mb-8 relative">
+          <div className="">
+            <img
+              src={"/bandmate/chat.png"}
+              className="shadow-xl w-128 md:w-auto"
+            />
           </div>
           <div className="text-stone-600 ml-4 xl:mt-24 text-lg">
             <header className="section-title lg:w-128 mt-16 xl:mt-64">
