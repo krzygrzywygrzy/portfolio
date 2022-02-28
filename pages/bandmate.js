@@ -65,7 +65,7 @@ const bandmate = () => {
         <div>
           <div className="flex justify-end">
             <div className="text-stone-600 mr-4 mt-24 text-lg">
-              <header className="section-title w-128">
+              <header className="section-title lg:w-128">
                 Pick musicians like you pick your dates!
               </header>
               <br />
@@ -96,7 +96,7 @@ const bandmate = () => {
             <img src={"/bandmate/chat.png"} className="shadow-xl" />
           </div>
           <div className="text-stone-600 ml-4 xl:mt-24 text-lg">
-            <header className="section-title w-128 mt-16 xl:mt-64">
+            <header className="section-title lg:w-128 mt-16 xl:mt-64">
               Of course you can chat with people you have matched with!
             </header>
             <br />

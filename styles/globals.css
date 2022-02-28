@@ -88,7 +88,7 @@ a {
 }
 
 .section-paragraph {
-  @apply w-96 font-light text-justify;
+  @apply md:w-72 lg:w-96 font-light text-justify;
 }
 
 @-webkit-keyframes slide-bottom {
