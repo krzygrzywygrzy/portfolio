@@ -113,10 +113,10 @@ a {
   transition: all 0.25s ease-in-out;
 }
 
-.project:hover,
+/* .project:hover,
 project > header {
   @apply underline;
-}
+} */
 
 @-webkit-keyframes slide-bottom {
   0% {

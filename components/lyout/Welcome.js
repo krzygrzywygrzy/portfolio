@@ -1,6 +1,5 @@
 import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Welcome = () => {
@@ -48,7 +47,7 @@ const Welcome = () => {
         <img
           alt="krzygrzywygrzy"
           src="https://i.scdn.co/image/ab6761610000e5eb07603145b500ea5408074053"
-          className="rounded-md object-cover h-4/5 lg:h-5/6 w-full shadow-xl"
+          className="rounded-md object-cover h-4/5 lg:h-5/6 w-full shadow hover:shadow-md"
         />
         <p className="text-center mt-2">
           Favourite band: <i>Bring Me The Horizon</i>

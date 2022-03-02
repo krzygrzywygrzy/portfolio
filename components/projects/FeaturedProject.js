@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { AiOutlineDesktop } from "react-icons/ai";
+import { HiOutlineEye } from "react-icons/hi";
 import Link from "next/link";
 
 const FeaturedProject = () => {
@@ -18,22 +18,24 @@ const FeaturedProject = () => {
             <Link href="/bandmate">details...</Link>
           </span>
         </p>
-        <a
-          className="project-link"
-          href="https://github.com/krzygrzywygrzy/bandmate_fb"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub size={24} /> <span className="ml-2">code</span>
-        </a>
-        <a
-          className="project-link"
-          href="https://determined-kepler-d34ffb.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <AiOutlineDesktop size={24} /> <span className="ml-2">preview</span>
-        </a>
+        <div className="flex gap-4">
+          <a
+            className="project-link"
+            href="https://github.com/krzygrzywygrzy/bandmate_fb"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub size={24} /> <span className="ml-2">code</span>
+          </a>
+          <a
+            className="project-link"
+            href="https://determined-kepler-d34ffb.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <HiOutlineEye size={24} /> <span className="ml-2">preview</span>
+          </a>
+        </div>
       </div>
     </div>
   );
