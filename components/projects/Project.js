@@ -22,16 +22,32 @@ const Project = ({ data }) => {
           className="object-cover h-full w-full rounded-md shadow hover:shadow-md"
         />
       </div>
-      <div className="text-stone-600 my-2">
+      <div className="my-2">
         <header className="project-title">{data.title}</header>
-        <div>{data.desc}</div>
-        <div className="flex items-center hover:text-stone-700 mt-2 gap-2 underline">
-          <a target="_blank" rel="noreferrer" href={data.github}>
-            <FaGithub size={22} />
-          </a>
-          <a target="_blank" rel="noreferrer" href={data.preview}>
-            <HiOutlineEye size={28} />
-          </a>
+        <div>
+          {data.desc} <span className="details-button">details...</span>
+        </div>
+        <div className="flex items-center mt-2 gap-2">
+          {data.github && (
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={data.github}
+              className="hover:text-stone-700 transition"
+            >
+              <FaGithub size={22} />
+            </a>
+          )}
+          {data.preview && (
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={data.preview}
+              className="hover:text-stone-700 transition"
+            >
+              <HiOutlineEye size={28} />
+            </a>
+          )}
         </div>
       </div>
     </div>

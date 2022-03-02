@@ -47,18 +47,16 @@ const bandmate = () => {
       </Head>
       <Navbar />
 
-      <div className="site flex mt-16">
-        <div>
-          <ProjectHeader
-            title="BandMate"
-            desc="The place where you can find perfect mates for your band!"
-          />
-          <TechDisplay tech={tech} />
-          <ProjectLinks
-            code="https://github.com/krzygrzywygrzy/bandmate_fb"
-            site="https://determined-kepler-d34ffb.netlify.app/"
-          />
-        </div>
+      <div className="site mt-16">
+        <ProjectHeader
+          title="BandMate"
+          desc="The place where you can find perfect mates for your band!"
+        />
+        <TechDisplay tech={tech} />
+        <ProjectLinks
+          code="https://github.com/krzygrzywygrzy/bandmate_fb"
+          site="https://determined-kepler-d34ffb.netlify.app/"
+        />
       </div>
       <div className="site">
         <div>

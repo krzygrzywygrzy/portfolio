@@ -32,6 +32,10 @@ a {
   transition: all 0.25s ease-in-out;
 }
 
+.transition {
+  transition: all 0.25s ease-in-out;
+}
+
 .welcome-photo {
   transition: rotate(0.125turn);
   /* @apply rounded object-cover h-full; */

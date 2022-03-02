@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const FeaturedProject = () => {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center mx-4 md:mx-0">
       <div className="w-128"></div>
       <div className="font-medium w-96 tracking-widest">
         <p className="text-stone-500">Featured Project</p>
