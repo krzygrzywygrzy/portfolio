@@ -100,6 +100,24 @@ a {
   @apply bg-stone-600 hover:bg-stone-800 rounded-full flex justify-center items-center px-4 py-2 text-xl text-white cursor-pointer;
 }
 
+.project {
+  @apply cursor-pointer;
+}
+
+.project-title {
+  transition: text-decoration 0.25s ease-in-out;
+  @apply text-black font-medium text-xl noto-serif;
+}
+
+.project > div > img {
+  transition: all 0.25s ease-in-out;
+}
+
+.project:hover,
+project > header {
+  @apply underline;
+}
+
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);

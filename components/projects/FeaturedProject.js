@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const FeaturedProject = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center ">
       <div className="w-128"></div>
       <div className="font-medium w-96 tracking-widest">
         <p className="text-stone-500">Featured Project</p>
-        <span className="text-4xl">
+        <span className="text-4xl noto-serif">
           <Link href="/bandmate">BandMate</Link>
         </span>
         <p>

@@ -9,7 +9,7 @@ const Welcome = () => {
   return (
     <div id="welcome" className="mx-8 md:grid grid-cols-7">
       <div className="hidden lg:block col-span-1"></div>
-      <header className="font-bold text-center md:text-left text-7xl xl:text-9xl mt-12 md:mt-56 lg:mt-32 col-span-4 lg:col-span-3 tracking-wide mr-2">
+      <header className="font-bold text-center md:text-left text-7xl xl:text-9xl mt-12 md:mt-56 lg:mt-32 col-span-4 lg:col-span-3 tracking-wide mr-2 ">
         <p className="ml-8">
           Hi! my <br />
           <span className="text-stone-500">name</span> is
@@ -48,7 +48,7 @@ const Welcome = () => {
         <img
           alt="krzygrzywygrzy"
           src="https://i.scdn.co/image/ab6761610000e5eb07603145b500ea5408074053"
-          className="rounded object-cover h-4/5 lg:h-5/6 w-full shadow-xl"
+          className="rounded-md object-cover h-4/5 lg:h-5/6 w-full shadow-xl"
         />
         <p className="text-center mt-2">
           Favourite band: <i>Bring Me The Horizon</i>
