@@ -113,7 +113,7 @@ a {
   @apply text-black font-medium text-xl noto-serif;
 }
 
-.project > div > img {
+.project > div > div {
   transition: all 0.25s ease-in-out;
 }
 

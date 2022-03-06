@@ -2,12 +2,20 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineEye } from "react-icons/hi";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const FeaturedProject = () => {
+  const router = useRouter();
+
   return (
     <div className="flex justify-center mx-4 md:mx-0">
-      <div className="w-128"></div>
-      <div className="font-medium w-96 tracking-widest">
+      <div
+        className="w-96 relative cursor-pointer"
+        onClick={() => router.push("/bandmate")}
+      >
+        <img src="/bandmate/main.png" className="shadow-xl rounded-md" />
+      </div>
+      <div className="ml-4 font-medium mt-32 w-96 tracking-widest">
         <p className="text-stone-500">Featured Project</p>
         <span className="text-4xl noto-serif">
           <Link href="/bandmate">BandMate</Link>

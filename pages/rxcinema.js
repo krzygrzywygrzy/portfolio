@@ -49,7 +49,7 @@ const rxcinema = () => {
       <div className="site mt-16">
         <ProjectHeader
           title="RxCinema"
-          desc='E-commerce app for company "Cinema &amp; Theatre Systems Laboratory"'
+          desc="Catalog of trening films and TV shows"
         />
         <TechDisplay tech={tech} />
         <ProjectLinks />

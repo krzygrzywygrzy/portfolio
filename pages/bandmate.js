@@ -112,7 +112,7 @@ const bandmate = () => {
             </p>
           </div>
         </div>
-        <div className="site flex justify-center items-center text-stone-600 mt-24 mb-32 noto-serif">
+        {/* <div className="site flex justify-center items-center text-stone-600 mt-24 mb-32 noto-serif">
           <div className="mr-8 text-2xl">Interested?</div>
           <div className="brown-button">
             <a
@@ -123,7 +123,7 @@ const bandmate = () => {
               Check it out...
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
