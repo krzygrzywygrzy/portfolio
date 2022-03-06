@@ -22,11 +22,6 @@ const tech = [
     link: "https://firebase.google.com/",
   },
   {
-    img: "/techLogos/typescript-logo.png",
-    desc: "TypeScript",
-    link: "https://www.typescriptlang.org/",
-  },
-  {
     img: "/techLogos/algolia-logo.png",
     desc: "Algolia",
     link: "https://www.algolia.com/",
@@ -49,7 +44,10 @@ const maller = () => {
       <div className="site mt-16">
         <ProjectHeader title="Maller" desc="E-commerce app" />
         <TechDisplay tech={tech} />
-        <ProjectLinks />
+        <ProjectLinks
+          code="https://github.com/krzygrzywygrzy/maller2"
+          site="https://maller2.vercel.app/"
+        />
       </div>
     </div>
   );

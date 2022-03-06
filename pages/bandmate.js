@@ -55,7 +55,7 @@ const bandmate = () => {
         <TechDisplay tech={tech} />
         <ProjectLinks
           code="https://github.com/krzygrzywygrzy/bandmate_fb"
-          site="https://determined-kepler-d34ffb.netlify.app/"
+          site="https://goofy-fermat-44f321.netlify.app/"
         />
       </div>
       <div className="site">
