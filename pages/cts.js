@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/lyout/Navbar";
-import Head from "next/head";
 import ProjectHeader from "../components/projects/ProjectHeader";
 import TechDisplay from "../components/projects/TechDisplay";
 import ProjectLinks from "../components/projects/ProjectLinks";
+import CustomHead from "../components/lyout/CustomHead";
 
 const tech = [
   {
@@ -31,33 +31,33 @@ const tech = [
     desc: "Tailwindcss",
     link: "https://tailwindcss.com/",
   },
-  //   {
-  //     img: "/techLogos/js-logo.png",
-  //     desc: "JavaScript",
-  //   },
 ];
 
 const cts = () => {
   return (
     <div>
-      <Head>
-        <title>CTS</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
+      <CustomHead title="CTS" />
       <Navbar />
-      <div className="site mt-16">
+      <section className="site mt-16">
         <ProjectHeader
           title="CTS"
           desc='E-commerce app for company "Cinema &amp; Theatre Systems Laboratory"'
         />
         <TechDisplay tech={tech} />
-        <ProjectLinks />
-      </div>
+        <ProjectLinks site={"https://ctsfront-xi.vercel.app/"} />
+      </section>
+      <section className="site grid gap-4 grid-cols-3 my-12">
+        <div className="col-span-2">
+          <img
+            src={"/cts/product.png"}
+            alt=""
+            className="w-full shadow-xl rounded-md"
+          />
+        </div>
+        <div>
+          <div className="noto-serif">E-commerce</div>
+        </div>
+      </section>
     </div>
   );
 };

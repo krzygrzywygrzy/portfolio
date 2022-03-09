@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/lyout/Navbar";
-import Head from "next/head";
 import TechDisplay from "../components/projects/TechDisplay";
 import ProjectHeader from "../components/projects/ProjectHeader";
 import ProjectLinks from "../components/projects/ProjectLinks";
+import CustomHead from "../components/lyout/CustomHead";
 
 const tech = [
   {
@@ -36,15 +36,7 @@ const tech = [
 const bandmate = () => {
   return (
     <>
-      <Head>
-        <title>BandMate</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
+      <CustomHead title="Bandmate" />
       <Navbar />
 
       <div className="site mt-16">
