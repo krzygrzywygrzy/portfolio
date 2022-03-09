@@ -19,6 +19,10 @@ a {
   box-sizing: border-box;
 }
 
+.noto-serif {
+  font-family: "Noto Serif Display", serif;
+}
+
 .site {
   @apply px-4 md:px-16 lg:px-32 xl:px-52;
 }
@@ -85,10 +89,6 @@ a {
 .section-title {
   font-family: "Noto Serif Display", serif;
   @apply text-3xl font-medium;
-}
-
-.noto-serif {
-  font-family: "Noto Serif Display", serif;
 }
 
 .section-paragraph {

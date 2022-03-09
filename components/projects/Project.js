@@ -13,7 +13,7 @@ const Project = ({ data }) => {
   return (
     <div className="project">
       <div onClick={handleRedirect}>
-        <div className="w-full h-72 relative rounded-md shadow hover:shadow-md">
+        <div className="w-full h-72 relative rounded-md shadow-md hover:shadow-lg">
           <Image
             src={data.image}
             layout="fill"
