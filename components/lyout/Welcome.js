@@ -39,7 +39,7 @@ const Welcome = () => {
         </div>
       </header>
 
-      <div className="hidden md:block col-span-3 h-4/5 ml-8 mt-16 mb-52 lg:mb-24 rounded p-1 border-dashe welcome-photo">
+      <div className="hidden md:block col-span-3 h-4/5 ml-8 mt-16 mb-52 lg:mb-8 rounded p-1 border-dashe welcome-photo">
         <p className="text-sm mb-2 text-center font-bold">
           Some <span className="text-red-600 text-xl">unrelated facts</span>{" "}
           about me:

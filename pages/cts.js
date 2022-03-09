@@ -46,6 +46,10 @@ const cts = () => {
         <TechDisplay tech={tech} />
         <ProjectLinks site={"https://ctsfront-xi.vercel.app/"} />
       </section>
+      <section className="site mt-12 text-stone-600 text-lg">
+        <span className="text-xl">Attention!</span> Some parts of the app are
+        still in development!
+      </section>
       <section className="site grid gap-4 grid-cols-3 my-12">
         <div className="col-span-2">
           <img
@@ -54,8 +58,21 @@ const cts = () => {
             className="w-full shadow-xl rounded-md"
           />
         </div>
+        <div className="text-stone-700">
+          <header className="section-title">
+            Company website with shop functionality
+          </header>
+          <br />
+          <div className=" font-light text-justify">
+            You can learn about company and buy their audio products.
+          </div>
+        </div>
+      </section>
+      <section className="text-stone-700 site">
+        <header className="section-title">Other functionalities</header>
+        <br />
         <div>
-          <div className="noto-serif">E-commerce</div>
+          <header>CMS system</header>
         </div>
       </section>
     </div>

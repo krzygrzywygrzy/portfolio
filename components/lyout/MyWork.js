@@ -31,7 +31,7 @@ const react_projects = [
 
 const MyWork = () => {
   return (
-    <div className="my-12 md:my-24">
+    <div className="my-12 md:my-16">
       <header
         className="site text-center noto-serif text-4xl md:text-7xl mb-12"
         id="mywork"
@@ -52,6 +52,3 @@ const MyWork = () => {
 };
 
 export default MyWork;
-
-// className =
-//   "site mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-y-4";

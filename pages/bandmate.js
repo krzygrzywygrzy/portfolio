@@ -104,18 +104,6 @@ const bandmate = () => {
             </p>
           </div>
         </div>
-        {/* <div className="site flex justify-center items-center text-stone-600 mt-24 mb-32 noto-serif">
-          <div className="mr-8 text-2xl">Interested?</div>
-          <div className="brown-button">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://determined-kepler-d34ffb.netlify.app/"
-            >
-              Check it out...
-            </a>
-          </div>
-        </div> */}
       </div>
     </>
   );
