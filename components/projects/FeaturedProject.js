@@ -6,16 +6,15 @@ import { useRouter } from "next/router";
 
 const FeaturedProject = () => {
   const router = useRouter();
-
   return (
-    <div className="items-center md:items-start flex flex-col-reverse xl:flex-row justify-center md:mx-4 md:mx-0">
+    <div className="items-center md:items-start flex flex-col-reverse xl:flex-row justify-center">
       <div
         className="flex w-full sm:w-auto md:w-80 lg:w-96 relative cursor-pointer"
         onClick={() => router.push("/bandmate")}
       >
         <img
           src="/bandmate/main.png"
-          className="shadow-xl rounded-md w-full md:w-auto"
+          className="shadow-xl rounded-md w-full md:w-auto h-128 sm:h-auto object-cover object-top"
         />
       </div>
       <div className="ml-4 font-medium mb-4 xl:mt-32 md:w-80 w-96 tracking-widest">
