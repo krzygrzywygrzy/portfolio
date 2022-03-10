@@ -8,14 +8,17 @@ const FeaturedProject = () => {
   const router = useRouter();
 
   return (
-    <div className="flex justify-center mx-4 md:mx-0">
+    <div className="items-center md:items-start flex flex-col-reverse xl:flex-row justify-center md:mx-4 md:mx-0">
       <div
-        className="w-96 relative cursor-pointer"
+        className="flex w-full sm:w-auto md:w-80 lg:w-96 relative cursor-pointer"
         onClick={() => router.push("/bandmate")}
       >
-        <img src="/bandmate/main.png" className="shadow-xl rounded-md" />
+        <img
+          src="/bandmate/main.png"
+          className="shadow-xl rounded-md w-full md:w-auto"
+        />
       </div>
-      <div className="ml-4 font-medium mt-32 w-96 tracking-widest">
+      <div className="ml-4 font-medium mb-4 xl:mt-32 md:w-80 w-96 tracking-widest">
         <section>
           <p className="text-stone-500">Featured Project</p>
           <span className="text-4xl noto-serif">

@@ -31,7 +31,7 @@ const react_projects = [
 
 const MyWork = () => {
   return (
-    <div className="my-12 md:my-16">
+    <div className="my-32 md:my-16">
       <header
         className="site text-center noto-serif text-4xl md:text-7xl mb-12"
         id="mywork"
