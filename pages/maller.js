@@ -26,6 +26,10 @@ const tech = [
     desc: "Algolia",
     link: "https://www.algolia.com/",
   },
+  {
+    img: "/techLogos/js-logo.png",
+    desc: "JavaScript",
+  },
 ];
 
 const maller = () => {
@@ -49,6 +53,18 @@ const maller = () => {
           site="https://maller2.vercel.app/"
         />
       </div>
+      <section className="site flex justify-end">
+        <div className="text-stone-600 mr-4 mt-24 text-lg md:w-auto relative">
+          <header className="section-title lg:w-128"></header>
+        </div>
+        <div className="mt-16 md:mr-0 md:-mt-36 w-80">
+          <img
+            alt=""
+            src="/maller/bm-mobile.png"
+            className="shadow-xl rounded-md"
+          />
+        </div>
+      </section>
     </div>
   );
 };
