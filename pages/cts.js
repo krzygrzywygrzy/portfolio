@@ -86,7 +86,7 @@ const cts = () => {
               </div>
             </header>
             <p>
-              People with "Admin" role can add, edit, remove products,
+              People with &quot;Admin&quot; role can add, edit, remove products,
               categories and discounts...
             </p>
             <br />
