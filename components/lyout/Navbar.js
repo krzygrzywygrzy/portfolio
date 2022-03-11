@@ -14,7 +14,9 @@ const Navbar = () => {
       <div className="font-semibold tracking-widest text-center text-stone-700 text-lg">
         <Link href="/">Paweł Przetacznik</Link>
       </div>
-      <div className="burger font-semibold">Contact Me</div>
+      <div className="burger font-semibold">
+        <Link href="/#contactme">Contact Me</Link>
+      </div>
       {showMenu && <Menu close={() => setShowMenu(false)} />}
     </nav>
   );

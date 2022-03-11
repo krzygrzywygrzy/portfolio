@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ContactMe from "../components/lyout/ContactMe";
 import MyWork from "../components/lyout/MyWork";
 import Navbar from "../components/lyout/Navbar";
 import Welcome from "../components/lyout/Welcome";
@@ -36,6 +37,7 @@ export default function Home() {
       <Navbar />
       <Welcome />
       <MyWork />
+      <ContactMe />
     </div>
   );
 }
