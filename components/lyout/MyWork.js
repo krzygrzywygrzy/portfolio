@@ -25,7 +25,7 @@ const react_projects = [
     link: "/rxcinema",
     desc: "Simple trending movies database",
     github: "https://github.com/krzygrzywygrzy/RxCinema.git",
-    preview: "https://nervous-poincare-0fe6c5.netlify.app/",
+    preview: "https://unruffled-nobel-383aa1.netlify.app/",
   },
 ];
 

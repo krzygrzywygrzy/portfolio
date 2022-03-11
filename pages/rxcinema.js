@@ -52,7 +52,10 @@ const rxcinema = () => {
           desc="Catalog of trening films and TV shows"
         />
         <TechDisplay tech={tech} />
-        <ProjectLinks />
+        <ProjectLinks
+          site="https://unruffled-nobel-383aa1.netlify.app/"
+          code="https://github.com/krzygrzywygrzy/RxCinema.git"
+        />
       </div>
     </div>
   );
