@@ -4,6 +4,7 @@ import ProjectHeader from "../components/projects/ProjectHeader";
 import TechDisplay from "../components/projects/TechDisplay";
 import ProjectLinks from "../components/projects/ProjectLinks";
 import Navbar from "../components/lyout/Navbar";
+import { HiOutlineFingerPrint, HiOutlineInboxIn } from "react-icons/hi";
 
 const tech = [
   {
@@ -58,17 +59,57 @@ const maller = () => {
       </div>
       <section className="site flex justify-end">
         <div className="text-stone-600 mr-4 mt-24 text-lg md:w-auto relative">
-          <header className="section-title lg:w-128 text-right">
-            Find all products you need
+          <header className="section-title lg:w-128 ">
+            Find all products you need, and add them to cart!
           </header>
-          <p></p>
+          <br />
+          <p className="section-paragraph">
+            You can find everything you want easly, thanks to{" "}
+            <span className="text-stone-700 font-semibold">
+              Algolia AI based search!
+            </span>
+          </p>
+          <br />
+          <p className="section-paragraph">
+            Everything displayed in beatiful minimalistic way!
+          </p>
         </div>
         <div className="mt-16 md:mr-0 md:-mt-36 w-80">
           <img
             alt=""
             src="/maller/bm-mobile.png"
-            className="shadow-xl rounded-md"
+            className="shadow-xl rounded-md xl:h-136 object-cover object-top w-full"
           />
+        </div>
+      </section>
+      <section className="site text-stone-700 site my-16 text-xl ">
+        <header className="section-title">Other functionalities</header>
+        <br />
+        <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-4">
+          <div>
+            <header className="functionality-header">
+              <span className="text-2xl">Firebase Auth</span>
+              <div className="flex ml-2">
+                <HiOutlineFingerPrint size={28} />
+              </div>
+            </header>
+            <p>
+              App uses Firebase Auth to authenticate users. Due to this solition
+              you can check history of your orders!
+            </p>
+          </div>
+          <div>
+            <header className="functionality-header">
+              <span className="text-2xl">Redux Persist</span>
+              <div className="flex ml-2">
+                <HiOutlineInboxIn size={28} />
+              </div>
+            </header>
+            <p>
+              App persists your basket, so you do not have to look for products
+              several times!
+            </p>
+          </div>
         </div>
       </section>
     </div>

@@ -14,10 +14,10 @@ const FeaturedProject = () => {
       >
         <img
           src="/bandmate/main.png"
-          className="shadow-xl rounded-md w-full md:w-auto h-128 sm:h-auto object-cover object-top"
+          className="shadow-xl rounded-md w-full md:w-auto h-144 sm:h-auto object-cover object-top"
         />
       </div>
-      <div className="ml-4 font-medium mb-4 xl:mt-32 md:w-80 w-96 tracking-widest">
+      <div className="ml-4 px-4 md:px-0 font-medium mb-4 xl:mt-32 md:w-80 w-96 tracking-widest">
         <section>
           <p className="text-stone-500">Featured Project</p>
           <span className="text-4xl noto-serif">
