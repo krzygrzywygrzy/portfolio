@@ -46,7 +46,10 @@ const maller = () => {
       </Head>
       <Navbar />
       <div className="site mt-16">
-        <ProjectHeader title="Maller" desc="E-commerce app" />
+        <ProjectHeader
+          title="Maller"
+          desc="E-commerce app with AI based search engine"
+        />
         <TechDisplay tech={tech} />
         <ProjectLinks
           code="https://github.com/krzygrzywygrzy/maller2"
@@ -55,7 +58,10 @@ const maller = () => {
       </div>
       <section className="site flex justify-end">
         <div className="text-stone-600 mr-4 mt-24 text-lg md:w-auto relative">
-          <header className="section-title lg:w-128"></header>
+          <header className="section-title lg:w-128 text-right">
+            Find all products you need
+          </header>
+          <p></p>
         </div>
         <div className="mt-16 md:mr-0 md:-mt-36 w-80">
           <img

@@ -132,6 +132,7 @@ const cts = () => {
               target="_blank"
               href={"https://github.com/michalwitek1232"}
               rel="noreferrer"
+              className="italic text-lg"
             >
               Michał Witek
             </a>

@@ -45,7 +45,7 @@ const Welcome = () => {
           about me:
         </p>
         <img
-          alt="krzygrzywygrzy"
+          alt=""
           src="https://i.scdn.co/image/ab6761610000e5eb07603145b500ea5408074053"
           className="rounded-md object-cover h-4/5 lg:h-5/6 w-full shadow hover:shadow-md"
         />

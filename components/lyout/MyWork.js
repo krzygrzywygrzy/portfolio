@@ -31,11 +31,8 @@ const react_projects = [
 
 const MyWork = () => {
   return (
-    <div className="my-32 md:my-16">
-      <header
-        className="site text-center noto-serif text-4xl md:text-7xl mb-12"
-        id="mywork"
-      >
+    <div id="mywork" className="py-32 md:py-24">
+      <header className="site text-center noto-serif text-4xl md:text-7xl mb-12">
         My work
       </header>
       <div className="site flex flex-col-reverse md:flex-row gap-4 justify-center">
