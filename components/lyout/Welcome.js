@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { HiArrowSmDown } from "react-icons/hi";
 import { useRouter } from "next/router";
+import gsap from "gsap";
 
 const Welcome = () => {
   const router = useRouter();
+  const titleRef = useRef();
+
+  useEffect(() => {
+    gsap.to(titleRef.current, {
+      opacity: 1,
+      duration: 0.8,
+      ease: "power3.out",
+      x: -20,
+    });
+  }, []);
 
   return (
     <div id="welcome" className="mx-8 md:grid grid-cols-7">
       <div className="hidden lg:block col-span-1"></div>
       <header className="font-bold text-center md:text-left text-7xl xl:text-9xl mt-12 md:mt-56 lg:mt-32 col-span-4 lg:col-span-3 tracking-wide mr-2 ">
-        <p className="ml-8">
-          Hi! my <br />
-          <span className="text-stone-500">name</span> is
-        </p>
-        <p className="ml-16 text-red-600">
-          Paweł<span className="text-black">...</span>
-        </p>
+        <div ref={titleRef} className="opacity-0">
+          <p className="ml-8">
+            Hi! my <br />
+            <span className="text-stone-500">name</span> is
+          </p>
+          <p className="ml-16 text-red-600">
+            Paweł<span className="text-black">...</span>
+          </p>
+        </div>
         <p className="text-base sm:text-lg md:text-2xl xl:text-4xl font-normal">
           And I&apos;m web and mobile developer
         </p>
