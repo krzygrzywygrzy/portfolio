@@ -97,6 +97,13 @@ const rxcinema = () => {
               to use full power of RxJS to manipulate state.
             </p>
           </div>
+          <div className="col-span-2 ">
+            <img
+              src="/rxcinema/rx-film.png"
+              className="h-full object-cover shadow-xl rounded-md"
+              alt=""
+            />
+          </div>
         </div>
       </section>
     </div>
