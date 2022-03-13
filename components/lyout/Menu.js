@@ -5,6 +5,7 @@ import gsap from "gsap";
 
 const Menu = ({ close }) => {
   const ref = useRef();
+  const linksRef = useRef();
 
   useEffect(() => {
     gsap.to(ref.current, {
@@ -15,9 +16,9 @@ const Menu = ({ close }) => {
   }, []);
 
   const closeMenu = () => {
-    gsap.to(ref.current, { h: 0, duration: 0.3, ease: "circ.out" });
-    // setTimeout(close, 300);
-    close();
+    gsap.to(linksRef.current, { opacity: 0, duration: 0 });
+    gsap.to(ref.current, { height: 0, duration: 0.3, ease: "circ.out" });
+    setTimeout(close, 301);
   };
 
   return (
@@ -29,7 +30,7 @@ const Menu = ({ close }) => {
       </div>
       <div className="site md:grid grid-cols-7">
         <div className="col-span-2"></div>
-        <div className="py-32 col-span-4">
+        <div className="py-32 col-span-4" ref={linksRef}>
           <NavLink label="WELCOME" link="/#welcome" close={closeMenu} />
           <NavLink label="MY WORK" link="/#mywork" close={closeMenu} />
           <NavLink label="CONTACT ME" link="/#contactme" close={closeMenu} />
