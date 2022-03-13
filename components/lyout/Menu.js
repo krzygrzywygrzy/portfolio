@@ -6,6 +6,7 @@ import gsap from "gsap";
 const Menu = ({ close }) => {
   const ref = useRef();
   const linksRef = useRef();
+  const closeButtonRef = useRef();
 
   useEffect(() => {
     gsap.to(ref.current, {
@@ -16,15 +17,22 @@ const Menu = ({ close }) => {
   }, []);
 
   const closeMenu = () => {
-    gsap.to(linksRef.current, { opacity: 0, duration: 0 });
+    gsap.to([linksRef.current, closeButtonRef.current], {
+      opacity: 0,
+      duration: 0,
+    });
     gsap.to(ref.current, { height: 0, duration: 0.3, ease: "circ.out" });
-    setTimeout(close, 301);
+    setTimeout(close, 300);
   };
 
   return (
     <div className="menu" ref={ref}>
       <div className="site py-8">
-        <div className=" text-white cursor-pointer" onClick={closeMenu}>
+        <div
+          className=" text-white cursor-pointer"
+          onClick={closeMenu}
+          ref={closeButtonRef}
+        >
           <HiX size={30} />
         </div>
       </div>

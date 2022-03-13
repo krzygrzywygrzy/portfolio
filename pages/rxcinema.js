@@ -77,7 +77,7 @@ const rxcinema = () => {
             >
               The Movie DB
             </a>{" "}
-            and it's film API, that provides information and photos
+            and it&apos;s film API, that provides information and photos
           </p>
         </div>
       </section>

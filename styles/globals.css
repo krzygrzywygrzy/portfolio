@@ -41,8 +41,7 @@ a {
 }
 
 .welcome-photo {
-  transition: rotate(0.125turn);
-  /* @apply rounded object-cover h-full; */
+  @apply hidden md:block col-span-3 h-4/5 ml-8 mt-16 mb-52 lg:mb-8 rounded p-1 relative opacity-0;
 }
 
 .slide-bottom {
@@ -61,6 +60,10 @@ a {
 }
 .navlink:hover {
   color: #976d3f;
+}
+
+.welcome-header {
+  @apply font-bold text-center md:text-left text-7xl xl:text-9xl mt-12 md:mt-56 lg:mt-32 col-span-4 lg:col-span-3 tracking-wide mr-2 relative;
 }
 
 .project-link {

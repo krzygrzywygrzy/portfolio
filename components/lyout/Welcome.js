@@ -6,6 +6,8 @@ import gsap from "gsap";
 const Welcome = () => {
   const router = useRouter();
   const titleRef = useRef();
+  const subtitleRef = useRef();
+  const photoRef = useRef();
 
   useEffect(() => {
     gsap.to(titleRef.current, {
@@ -14,13 +16,20 @@ const Welcome = () => {
       ease: "power3.out",
       x: -20,
     });
+
+    gsap.to([subtitleRef.current, photoRef.current], {
+      opacity: 1,
+      duration: 0.8,
+      ease: "power3.out",
+      delay: 0.2,
+    });
   }, []);
 
   return (
     <div id="welcome" className="mx-8 md:grid grid-cols-7">
       <div className="hidden lg:block col-span-1"></div>
-      <header className="font-bold text-center md:text-left text-7xl xl:text-9xl mt-12 md:mt-56 lg:mt-32 col-span-4 lg:col-span-3 tracking-wide mr-2 ">
-        <div ref={titleRef} className="opacity-0">
+      <header className="welcome-header">
+        <div ref={titleRef} className="opacity-0  -left-5">
           <p className="ml-8">
             Hi! my <br />
             <span className="text-stone-500">name</span> is
@@ -29,17 +38,19 @@ const Welcome = () => {
             Paweł<span className="text-black">...</span>
           </p>
         </div>
-        <p className="text-base sm:text-lg md:text-2xl xl:text-4xl font-normal">
-          And I&apos;m web and mobile developer
-        </p>
+        <div className="opacity-0 -bottom-5" ref={subtitleRef}>
+          <p className="text-base sm:text-lg md:text-2xl xl:text-4xl font-normal">
+            And I&apos;m web and mobile developer
+          </p>
 
-        <div className="text-base lg:text-lg">
-          <p className="mt-12 ">
-            I use React <span>(and sometimes Flutter)</span>
-          </p>
-          <p className="border-b inline  border-black">
-            to craft minimalistic and maintable apps
-          </p>
+          <div className="text-base lg:text-lg">
+            <p className="mt-12 ">
+              I use React <span>(and sometimes Flutter)</span>
+            </p>
+            <p className="border-b inline  border-black">
+              to craft minimalistic and maintable apps
+            </p>
+          </div>
         </div>
         <div className="text-xl mt-12 mb-6 text-stone-500">
           Check some of my recent projects
@@ -52,7 +63,7 @@ const Welcome = () => {
         </div>
       </header>
 
-      <div className="hidden md:block col-span-3 h-4/5 ml-8 mt-16 mb-52 lg:mb-8 rounded p-1 border-dashe welcome-photo">
+      <div className="welcome-photo" ref={photoRef}>
         <p className="text-sm mb-2 text-center font-bold">
           Some <span className="text-red-600 text-xl">unrelated facts</span>{" "}
           about me:
