@@ -11,6 +11,10 @@ body {
   background: #f9f9f9;
 }
 
+.bg {
+  background: #f9f9f9;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -123,6 +127,10 @@ a {
 
 .functionality-header {
   @apply flex items-center mb-4;
+}
+
+.skills {
+  @apply flex flex-col md:flex-row items-center gap-4 justify-center mt-8;
 }
 
 /* .project:hover,

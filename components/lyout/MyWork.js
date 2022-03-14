@@ -77,7 +77,6 @@ const MyWork = () => {
         </div>
         <FeaturedProject />
       </div>
-      <ThisPortoflio />
     </div>
   );
 };

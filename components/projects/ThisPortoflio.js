@@ -3,7 +3,7 @@ import TechIcon from "../techIcon/TechIcon";
 
 const ThisPortoflio = () => {
   return (
-    <div className="w-full flex flex-col items-center text-stone-600">
+    <div className="w-full flex flex-col items-center text-stone-600 mt-16 mb-32">
       <div className="text-lg">This portfolio site is made using:</div>
       <div className="mt-4 flex gap-4">
         <TechIcon

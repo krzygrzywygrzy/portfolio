@@ -9,7 +9,7 @@ const TechIcon = ({ img, desc, link }) => {
       href={link}
       rel="noreferrer"
     >
-      <div className="tech-img-wrapper bg-white">
+      <div className="tech-img-wrapper bg">
         <Image
           src={img}
           alt={desc}

@@ -38,9 +38,10 @@ const Menu = ({ close }) => {
       </div>
       <div className="site md:grid grid-cols-7">
         <div className="col-span-2"></div>
-        <div className="py-32 col-span-4" ref={linksRef}>
+        <div className="py-24 col-span-4" ref={linksRef}>
           <NavLink label="WELCOME" link="/#welcome" close={closeMenu} />
           <NavLink label="MY WORK" link="/#mywork" close={closeMenu} />
+          <NavLink label="SKILLS" link="/#skills" close={closeMenu} />
           <NavLink label="CONTACT ME" link="/#contactme" close={closeMenu} />
         </div>
       </div>

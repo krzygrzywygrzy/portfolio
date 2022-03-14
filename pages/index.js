@@ -2,7 +2,9 @@ import Head from "next/head";
 import ContactMe from "../components/lyout/ContactMe";
 import MyWork from "../components/lyout/MyWork";
 import Navbar from "../components/lyout/Navbar";
+import Skills from "../components/lyout/Skills";
 import Welcome from "../components/lyout/Welcome";
+import ThisPortoflio from "../components/projects/ThisPortoflio";
 
 export default function Home() {
   return (
@@ -37,7 +39,9 @@ export default function Home() {
       <Navbar />
       <Welcome />
       <MyWork />
+      <Skills />
       <ContactMe />
+      <ThisPortoflio />
     </div>
   );
 }
