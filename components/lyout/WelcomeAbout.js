@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 
-const WelcomeAbout = () => {
+const WelcomeAbout = ({ about }) => {
   const photoRef = useRef();
   useEffect(() => {
     gsap.to(photoRef.current, {
@@ -15,14 +15,14 @@ const WelcomeAbout = () => {
   return (
     <div className="welcome-photo" ref={photoRef}>
       <p className="text-sm mb-2 text-center font-bold">
-        Some <span className="text-red-600 text-xl"> facts</span> about me:
+        Some <span className={`${about.color} text-xl`}> facts</span> about me:
       </p>
       <img
         alt=""
-        src="https://i.scdn.co/image/ab6761610000e5eb07603145b500ea5408074053"
+        src={about.photo}
         className="rounded-md object-cover h-4/5 lg:h-5/6 w-full shadow hover:shadow-md"
       />
-      <p className="text-center mt-2">BMTH</p>
+      <p className="text-center mt-2">{about.desc}</p>
     </div>
   );
 };

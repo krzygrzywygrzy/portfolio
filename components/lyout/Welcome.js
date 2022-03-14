@@ -1,8 +1,9 @@
-import React, { useRef, useEffect, useContext } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { HiArrowSmDown } from "react-icons/hi";
 import { useRouter } from "next/router";
 import gsap from "gsap";
 import WelcomeAbout from "./WelcomeAbout";
+import abouts from "../../core/abouts";
 
 const Welcome = () => {
   const router = useRouter();
@@ -25,6 +26,29 @@ const Welcome = () => {
     });
   }, []);
 
+  //abouts
+  function timeout(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+  const [currentAbout, setCurrentAbout] = useState(0);
+  const [displayAbout, setDisplayAbout] = useState(true);
+  useEffect(() => {
+    const changeAbouts = async () => {
+      await timeout(4000);
+
+      setDisplayAbout(false);
+      await timeout(1000);
+      setCurrentAbout((curr) => {
+        if (curr !== abouts.length - 1) return curr + 1;
+        else return 0;
+      });
+
+      setDisplayAbout(true);
+      changeAbouts();
+    };
+    changeAbouts();
+  }, []);
+
   return (
     <div id="welcome" className="mx-8 md:grid grid-cols-7">
       <div className="hidden lg:block col-span-1"></div>
@@ -34,7 +58,7 @@ const Welcome = () => {
             Hi! my <br />
             <span className="text-stone-500">name</span> is
           </p>
-          <p className="ml-16 text-red-600">
+          <p className={`ml-16 ${abouts[currentAbout].color}`}>
             Paweł<span className="text-black">...</span>
           </p>
         </div>
@@ -62,7 +86,7 @@ const Welcome = () => {
           <HiArrowSmDown size={30} />
         </div>
       </header>
-      <WelcomeAbout />
+      {displayAbout && <WelcomeAbout about={abouts[currentAbout]} />}
     </div>
   );
 };

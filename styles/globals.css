@@ -46,7 +46,7 @@ a {
 }
 
 .welcome-photo {
-  @apply hidden md:block col-span-3 h-4/5 ml-8 mt-16 mb-52 lg:mb-8 rounded p-1 relative opacity-0;
+  @apply hidden md:block col-span-3 h-144 ml-8 mt-16 mb-52 lg:mb-8 rounded p-1 relative opacity-0;
 }
 
 .slide-bottom {
@@ -137,6 +137,19 @@ a {
 project > header {
   @apply underline;
 } */
+
+/* colors */
+.red {
+  @apply text-red-600;
+}
+
+.black {
+  @apply text-black;
+}
+
+.sky {
+  @apply text-sky-300;
+}
 
 @-webkit-keyframes slide-bottom {
   0% {

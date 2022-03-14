@@ -67,7 +67,7 @@ const MyWork = () => {
         My work
       </header>
       <div
-        className="site flex flex-col-reverse md:flex-row gap-4 justify-center opacity-0"
+        className="flex flex-col-reverse md:flex-row gap-4 justify-center opacity-0"
         ref={projectsRef}
       >
         <div className="flex flex-col gap-8 md:w-96 ">
