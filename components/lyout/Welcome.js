@@ -48,7 +48,7 @@ const Welcome = () => {
               I use React <span>(and sometimes Flutter)</span>
             </p>
             <p className="border-b inline  border-black">
-              to craft minimalistic and maintable apps
+              to craft minimalistic and maintainable apps
             </p>
           </div>
         </div>

@@ -71,7 +71,7 @@ const bandmate = () => {
                 You can decide using criteria like:{" "}
                 <span className="text-stone-700 font-semibold">
                   instruments, prefered genres and even music that person
-                  lestens to!
+                  listens to!
                 </span>
               </p>
             </div>
@@ -99,7 +99,7 @@ const bandmate = () => {
               App would be useless if you were not able to connect with other
               musicians... so you can use{" "}
               <span className="text-stone-700 font-semibold">
-                built in chat!
+                built-in chat!
               </span>
             </p>
           </div>

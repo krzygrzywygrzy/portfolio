@@ -68,7 +68,7 @@ const rxcinema = () => {
           <header className="section-title">Check out trending films</header>
           <br />
           <p className="section-paragraph">
-            Everything thants to{" "}
+            Everything thanks to{" "}
             <a
               rel="noreferrer"
               target="_blank"

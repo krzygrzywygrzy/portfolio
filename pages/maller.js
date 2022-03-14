@@ -64,7 +64,7 @@ const maller = () => {
           </header>
           <br />
           <p className="section-paragraph">
-            You can find everything you want easly, thanks to{" "}
+            You can find everything you want easliy, thanks to{" "}
             <span className="text-stone-700 font-semibold">
               Algolia AI based search!
             </span>
@@ -94,7 +94,7 @@ const maller = () => {
               </div>
             </header>
             <p>
-              App uses Firebase Auth to authenticate users. Due to this solition
+              App uses Firebase Auth to authenticate users. Due to this solution
               you can check history of your orders!
             </p>
           </div>
