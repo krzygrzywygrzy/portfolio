@@ -1,13 +1,13 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useContext } from "react";
 import { HiArrowSmDown } from "react-icons/hi";
 import { useRouter } from "next/router";
 import gsap from "gsap";
+import WelcomeAbout from "./WelcomeAbout";
 
 const Welcome = () => {
   const router = useRouter();
   const titleRef = useRef();
   const subtitleRef = useRef();
-  const photoRef = useRef();
 
   useEffect(() => {
     gsap.to(titleRef.current, {
@@ -17,7 +17,7 @@ const Welcome = () => {
       x: -20,
     });
 
-    gsap.to([subtitleRef.current, photoRef.current], {
+    gsap.to(subtitleRef.current, {
       opacity: 1,
       duration: 0.8,
       ease: "power3.out",
@@ -62,21 +62,7 @@ const Welcome = () => {
           <HiArrowSmDown size={30} />
         </div>
       </header>
-
-      <div className="welcome-photo" ref={photoRef}>
-        <p className="text-sm mb-2 text-center font-bold">
-          Some <span className="text-red-600 text-xl">unrelated facts</span>{" "}
-          about me:
-        </p>
-        <img
-          alt=""
-          src="https://i.scdn.co/image/ab6761610000e5eb07603145b500ea5408074053"
-          className="rounded-md object-cover h-4/5 lg:h-5/6 w-full shadow hover:shadow-md"
-        />
-        <p className="text-center mt-2">
-          Favourite band: <i>Bring Me The Horizon</i>
-        </p>
-      </div>
+      <WelcomeAbout />
     </div>
   );
 };

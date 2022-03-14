@@ -38,6 +38,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Welcome />
+
       <MyWork />
       <Skills />
       <ContactMe />
