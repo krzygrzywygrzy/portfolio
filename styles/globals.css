@@ -46,7 +46,7 @@ a {
 }
 
 .welcome-photo {
-  @apply hidden md:block col-span-3 h-144 ml-8 mt-16 mb-52 lg:mb-8 rounded p-1 relative opacity-0;
+  @apply hidden md:block h-full ml-8 mt-20 mb-52 lg:mb-8 rounded p-1 relative opacity-0;
 }
 
 .slide-bottom {
@@ -139,8 +139,8 @@ project > header {
 } */
 
 /* colors */
-.red {
-  @apply text-red-600;
+.pink {
+  @apply text-rose-600;
 }
 
 .black {
@@ -149,6 +149,14 @@ project > header {
 
 .sky {
   @apply text-sky-300;
+}
+
+.yellow {
+  @apply text-yellow-500;
+}
+
+.red {
+  color: #e10203;
 }
 
 @-webkit-keyframes slide-bottom {

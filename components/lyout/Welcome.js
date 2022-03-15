@@ -86,7 +86,9 @@ const Welcome = () => {
           <HiArrowSmDown size={30} />
         </div>
       </header>
-      {displayAbout && <WelcomeAbout about={abouts[currentAbout]} />}
+      <div className="h-144 col-span-3">
+        {displayAbout && <WelcomeAbout about={abouts[currentAbout]} />}
+      </div>
     </div>
   );
 };
