@@ -29,22 +29,14 @@ const Skills = () => {
         Skills
       </header>
       <section className="skills opacity-0" ref={mainSkillsRef}>
-        <div>I spend most time with:</div>
+        <div>I spend most of my time with:</div>
         <div className="flex gap-4">
           <TechIcon img={"/techLogos/react-logo.png"} desc={"React"} />
-          <TechIcon img={"/techLogos/flutter-logo.png"} desc={"Flutter"} />
+          <TechIcon img={"/techLogos/redux-logo.png"} desc={"Redux"} />
           <TechIcon
             img={"/techLogos/typescript-logo.png"}
             desc={"TypeScript"}
           />
-          <TechIcon img={"/techLogos/git-logo.png"} desc={"Git"} />
-        </div>
-      </section>
-      <section className="skills opacity-0" ref={otherSkillsRef}>
-        <div>But I also have some knowlage about:</div>
-        <div className="flex gap-4">
-          <TechIcon img={"/techLogos/mysql-logo.png"} desc={"MySQL"} />
-          <TechIcon img={"/techLogos/mongo-logo.png"} desc={"MongoDB"} />
         </div>
       </section>
     </div>

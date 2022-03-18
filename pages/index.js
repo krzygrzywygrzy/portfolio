@@ -42,7 +42,6 @@ export default function Home() {
       <MyWork />
       <Skills />
       <ContactMe />
-      <ThisPortoflio />
     </div>
   );
 }

@@ -64,13 +64,11 @@ const Welcome = () => {
         </div>
         <div className="opacity-0 -bottom-5" ref={subtitleRef}>
           <p className="text-base sm:text-lg md:text-2xl xl:text-4xl font-normal">
-            And I&apos;m web and mobile developer
+            And I&apos;m web developer
           </p>
 
           <div className="text-base lg:text-lg">
-            <p className="mt-12 ">
-              I use React <span>(and sometimes Flutter)</span>
-            </p>
+            <p className="mt-12 ">I use React</p>
             <p className="border-b inline  border-black">
               to craft minimalistic and maintainable apps
             </p>

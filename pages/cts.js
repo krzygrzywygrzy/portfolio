@@ -52,10 +52,6 @@ const cts = () => {
         <TechDisplay tech={tech} />
         <ProjectLinks site={"https://ctsfront-xi.vercel.app/"} />
       </section>
-      <section className="site mt-12 text-stone-600 text-lg">
-        <span className="text-xl">Attention!</span> Some parts of the app are
-        still in development!
-      </section>
       <section className="site flex flex-col-reverse md:grid grid-cols-3 gap-4 my-12">
         <div className="col-span-2">
           <img

@@ -79,8 +79,7 @@ const MyWork = () => {
       </div>
 
       <section className="site text-center text-xl">
-        You can also check my Flutter projects and some older repos on my
-        github:{" "}
+        You can also check some older repos on my github:{" "}
         <a
           href="https://github.com/krzygrzywygrzy"
           rel="noreferrer"
