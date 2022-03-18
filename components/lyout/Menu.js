@@ -36,10 +36,10 @@ const Menu = ({ close }) => {
           <HiX size={30} />
         </div>
       </div>
-      <div className="site md:grid grid-cols-7">
+      <div className="site md:grid grid-cols-7 h-full">
         <div className="col-span-2"></div>
         <div
-          className="flex flex-col items-start justify-center col-span-4"
+          className="flex flex-col items-start justify-center col-span-4 "
           ref={linksRef}
         >
           <NavLink label="WELCOME" link="/#welcome" close={closeMenu} />

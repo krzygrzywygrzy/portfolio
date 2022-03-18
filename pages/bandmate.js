@@ -17,16 +17,6 @@ const tech = [
     link: "https://redux.js.org/",
   },
   {
-    img: "/techLogos/sass-logo.jpg",
-    desc: "Sass",
-    link: "https://sass-lang.com/",
-  },
-  {
-    img: "/techLogos/firebase-logo.png",
-    desc: "Firebase",
-    link: "https://firebase.google.com/",
-  },
-  {
     img: "/techLogos/typescript-logo.png",
     desc: "TypeScript",
     link: "https://www.typescriptlang.org/",

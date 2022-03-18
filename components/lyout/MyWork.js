@@ -59,7 +59,7 @@ const MyWork = () => {
   }, []);
 
   return (
-    <div id="mywork" className="py-32 md:py-24">
+    <div id="mywork" className="py-44">
       <header
         className="site text-center noto-serif text-6xl md:text-7xl mb-12 opacity-0"
         ref={titleRef}
