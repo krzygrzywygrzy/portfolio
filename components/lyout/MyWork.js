@@ -70,7 +70,7 @@ const MyWork = () => {
         className="flex flex-col-reverse md:flex-row gap-4 justify-center opacity-0"
         ref={projectsRef}
       >
-        <div className="flex flex-col gap-8 md:w-96 ">
+        <div className="mx-4 md:mx-0 flex flex-col gap-8 md:w-96 ">
           {react_projects.map((project) => (
             <Project key={project.title} data={project} />
           ))}

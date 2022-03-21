@@ -133,11 +133,6 @@ a {
   @apply flex flex-col md:flex-row items-center gap-4 justify-center mt-8;
 }
 
-/* .project:hover,
-project > header {
-  @apply underline;
-} */
-
 /* colors */
 .pink {
   @apply text-rose-600;

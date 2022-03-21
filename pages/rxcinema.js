@@ -47,11 +47,13 @@ const rxcinema = () => {
         />
       </Head>
       <Navbar />
-      <div className="site mt-16">
-        <ProjectHeader
-          title="RxCinema"
-          desc="Catalog of trening films and TV shows"
-        />
+      <div className="site mt-16 mb-32">
+        <ProjectHeader title="RxCinema" />
+        <div className="text-xl text-stone-600 md:w-144 text-justify">
+          App that I built to learn Redux-Observable to use power of RxJS in
+          Redux store (that is why app is called RxCinema). It is site about
+          trending movies that are taken from The Movie DB's api.
+        </div>
         <TechDisplay tech={tech} />
         <ProjectLinks
           site="https://unruffled-nobel-383aa1.netlify.app/"

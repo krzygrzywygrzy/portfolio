@@ -21,6 +21,11 @@ const tech = [
     desc: "TypeScript",
     link: "https://www.typescriptlang.org/",
   },
+  {
+    img: "/techLogos/sass-logo.jpg",
+    desc: "SASS",
+    link: "https://www.typescriptlang.org/",
+  },
 ];
 
 const bandmate = () => {
@@ -30,10 +35,12 @@ const bandmate = () => {
       <Navbar />
 
       <div className="site mt-16">
-        <ProjectHeader
-          title="BandMate"
-          desc="The place where you can find perfect mates for your band!"
-        />
+        <ProjectHeader title="BandMate" />
+        <div className="text-xl text-stone-600 md:w-144 text-justify">
+          An app that allow musicians to find perfect member to their band that
+          I built during hackaton that took place in my school. After it I
+          polished the app and deloyed it.
+        </div>
         <TechDisplay tech={tech} />
         <ProjectLinks
           code="https://github.com/krzygrzywygrzy/bandmate_fb"

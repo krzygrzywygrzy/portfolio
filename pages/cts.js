@@ -45,10 +45,10 @@ const cts = () => {
       <CustomHead title="CTS" />
       <Navbar />
       <section className="site mt-16">
-        <ProjectHeader
-          title="CTS"
-          desc='E-commerce app for company "Cinema &amp; Theatre Systems Laboratory"'
-        />
+        <ProjectHeader title="CTS" />
+        <div className="text-xl text-stone-600 md:w-144 text-justify">
+          E-commerce app for company "Cinema &amp; Theatre Systems Laboratory"
+        </div>
         <TechDisplay tech={tech} />
         <ProjectLinks site={"https://ctsfront-xi.vercel.app/"} />
       </section>

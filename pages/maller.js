@@ -17,11 +17,11 @@ const tech = [
     desc: "Redux",
     link: "https://redux.js.org/",
   },
-  {
-    img: "/techLogos/firebase-logo.png",
-    desc: "Firebase",
-    link: "https://firebase.google.com/",
-  },
+  // {
+  //   img: "/techLogos/firebase-logo.png",
+  //   desc: "Firebase",
+  //   link: "https://firebase.google.com/",
+  // },
   {
     img: "/techLogos/algolia-logo.png",
     desc: "Algolia",
@@ -47,10 +47,12 @@ const maller = () => {
       </Head>
       <Navbar />
       <div className="site mt-16">
-        <ProjectHeader
-          title="Maller"
-          desc="E-commerce app with AI based search engine"
-        />
+        <ProjectHeader title="Maller" />
+        <div className="text-xl text-stone-600 md:w-144 text-justify">
+          E-commerce app that was my extracurricular school project. Project has
+          fully functioning searching system provided by Algolia. I have
+          rewritten this app recently, in order to achieve better code quality.
+        </div>
         <TechDisplay tech={tech} />
         <ProjectLinks
           code="https://github.com/krzygrzywygrzy/maller2"
