@@ -52,7 +52,7 @@ const rxcinema = () => {
         <div className="text-xl text-stone-600 md:w-144 text-justify">
           App that I built to learn Redux-Observable to use power of RxJS in
           Redux store (that is why app is called RxCinema). It is site about
-          trending movies that are taken from The Movie DB's api.
+          trending movies that are taken from The Movie DB&apos;s api.
         </div>
         <TechDisplay tech={tech} />
         <ProjectLinks
