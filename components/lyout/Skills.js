@@ -39,6 +39,18 @@ const Skills = () => {
           />
         </div>
       </section>
+      <section className="text-center flex justify-center">
+        <p className="lg:w-1/2 ">
+          I started to use <b>React</b> somewhere around summer 2020 and I am
+          still learning new things about it. When I found out about hooks I
+          instantly fell in love in them and started to use them. Meanwhile I
+          also leanred how to use <b>Redux</b>, at first pure then with{" "}
+          <b>Thunk</b>. Another step was <b>TypeScript</b> that allowed me to
+          have more controll over code (and more hints is also great
+          advantage!!). I also learned <b>Redux-Observable</b> that allowed me
+          to use RxJS to manipulate Redux's store state.
+        </p>
+      </section>
     </div>
   );
 };
