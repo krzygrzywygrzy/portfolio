@@ -48,7 +48,7 @@ const Skills = () => {
           <b>Thunk</b>. Another step was <b>TypeScript</b> that allowed me to
           have more controll over code (and more hints is also great
           advantage!!). I also learned <b>Redux-Observable</b> that allowed me
-          to use RxJS to manipulate Redux's store state.
+          to use RxJS to manipulate Redux&apos;s store state.
         </p>
       </section>
     </div>
